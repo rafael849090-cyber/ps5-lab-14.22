@@ -1,0 +1,35 @@
+{
+  "projeto": "laboratório de pesquisa do PS5 firmware 14.22",
+  "versao": "1.0",
+  "arquitetura": "hibrida",
+  "controle": {
+    "dispositivo": "Android",
+    "ambiente": "Termux",
+    "coordenador": "Python",
+    "execucao_local": true
+  },
+  "conexoes": {
+    "principal": "APIs de modelos de IA",
+    "complementar": "Interfaces web",
+    "ferramentas_locais": [
+      "Python",
+      "Git",
+      "Gerenciamento de arquivos",
+      "Registro de evidencias"
+    ]
+  },
+  "requisitos": {
+    "independencia_de_fornecedor": true,
+    "adaptadores_independentes": true,
+    "revisao_por_modelo_independente": true,
+    "validacao_humana": true,
+    "preservacao_dos_originais": true
+  },
+  "estado": {
+    "arquitetura_aprovada": true,
+    "modelos_selecionados": false,
+    "apis_contratadas": false,
+    "bibliotecas_instaladas": false,
+    "coordenador_implementado": false
+  }
+}
