@@ -1,0 +1,27 @@
+{
+  "id": "T03",
+  "arquivo": "material_analise.py",
+  "tipo": "codigo_python",
+  "descricao": "Exemplo controlado de leitura e validacao basica de configuracoes JSON.",
+  "contexto": "O material foi criado exclusivamente para avaliar interpretacao estatica de codigo. Nao representa codigo interno do PS5 nem implementacao real do firmware.",
+  "dependencias_visiveis": [
+    "json",
+    "pathlib"
+  ],
+  "comportamentos_observaveis": [
+    "Verifica se o caminho informado existe.",
+    "Abre o arquivo em modo de leitura com codificacao UTF-8.",
+    "Interpreta o conteudo como JSON.",
+    "Exige que o resultado seja um objeto do tipo dict.",
+    "Verifica a presenca dos campos obrigatorios.",
+    "Retorna os campos ausentes e um indicador de validade."
+  ],
+  "limitacoes": [
+    "O codigo nao foi executado.",
+    "Nao ha arquivo de configuracao de exemplo fornecido.",
+    "Nao ha testes automatizados.",
+    "Nao ha tratamento especifico para todos os possiveis erros de leitura ou decodificacao.",
+    "O material nao permite tirar conclusoes sobre o firmware do PS5."
+  ],
+  "regra": "Os modelos devem analisar apenas o material fornecido e nao atribuir a ele funcionalidades que nao estejam demonstradas."
+}

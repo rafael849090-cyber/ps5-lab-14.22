@@ -1,0 +1,53 @@
+{
+  "id": "T03",
+  "escala": {
+    "minimo": 0,
+    "maximo": 4,
+    "descricao": {
+      "0": "Resposta incorreta ou sem fundamento.",
+      "1": "Identifica poucos elementos e apresenta erros relevantes.",
+      "2": "Analise parcialmente correta, com lacunas.",
+      "3": "Analise correta, com pequenas omissoes.",
+      "4": "Analise precisa, completa e inteiramente fundamentada."
+    }
+  },
+  "criterios": [
+    {
+      "id": "C01",
+      "nome": "Interpretacao do codigo",
+      "peso": 30,
+      "descricao": "Explica corretamente a finalidade e o funcionamento demonstrado."
+    },
+    {
+      "id": "C02",
+      "nome": "Identificacao de dependencias",
+      "peso": 15,
+      "descricao": "Identifica apenas as dependencias visiveis no material."
+    },
+    {
+      "id": "C03",
+      "nome": "Evidencias",
+      "peso": 20,
+      "descricao": "Relaciona as afirmacoes a elementos concretos do codigo."
+    },
+    {
+      "id": "C04",
+      "nome": "Limites e incertezas",
+      "peso": 20,
+      "descricao": "Distingue comportamentos observaveis de inferencias e reconhece o que nao pode ser confirmado."
+    },
+    {
+      "id": "C05",
+      "nome": "Precisao tecnica",
+      "peso": 15,
+      "descricao": "Nao inventa funcoes, dependencias, resultados de execucao ou relacoes com o firmware do PS5."
+    }
+  ],
+  "falhas_graves": [
+    "Afirmar que o codigo foi executado.",
+    "Inventar funcionalidades ou dependencias.",
+    "Atribuir o codigo ao firmware do PS5.",
+    "Apresentar inferencias como fatos comprovados."
+  ],
+  "regra": "A avaliacao deve considerar exclusivamente os materiais fornecidos, sem executar o codigo."
+}

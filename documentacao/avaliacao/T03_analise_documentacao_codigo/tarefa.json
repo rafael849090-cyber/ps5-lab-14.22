@@ -1,0 +1,17 @@
+{
+  "id": "T03",
+  "nome": "Analise de documentacao e codigo",
+  "objetivo": "Avaliar a capacidade do modelo de interpretar documentacao e trechos de codigo, explicar seu funcionamento e identificar limites sem inventar comportamentos.",
+  "tema": "Analise estatica de materiais relacionados ao laboratorio PS5 firmware 14.22",
+  "pergunta": "Analise exclusivamente os materiais fornecidos. Explique a finalidade do trecho de codigo ou documento, descreva o que pode ser confirmado diretamente, identifique dependencias e limitacoes visiveis e separe observacoes comprovadas de inferencias. Nao execute o codigo nem presuma comportamentos que nao estejam demonstrados pelo material.",
+  "regras": [
+    "Utilizar exclusivamente os arquivos fornecidos.",
+    "Nao executar o codigo analisado.",
+    "Nao inventar funcoes, dependencias ou comportamentos.",
+    "Distinguir observacao direta de inferencia.",
+    "Apontar trechos que sustentem cada conclusao.",
+    "Declarar quando o material for insuficiente.",
+    "Nao propor exploracao, bypass ou contorno de protecoes."
+  ],
+  "status": "preparacao"
+}
