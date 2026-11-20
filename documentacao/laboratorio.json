@@ -1,0 +1,20 @@
+{
+  "nome": "laboratório de pesquisa do PS5 firmware 14.22",
+  "plataforma": "Android",
+  "ambiente": "Termux",
+  "arquitetura": "ARM64",
+  "linguagem_principal": "Python",
+  "objetivos": [
+    "Pesquisa técnica",
+    "Análise estática",
+    "Organização de evidências",
+    "Coordenação de agentes de IA",
+    "Revisão independente de resultados"
+  ],
+  "politica": {
+    "preservar_arquivos_originais": true,
+    "registrar_fontes": true,
+    "separar_fatos_de_hipoteses": true,
+    "exigir_revisao_humana": true
+  }
+}
