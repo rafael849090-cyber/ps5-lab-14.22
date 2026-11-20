@@ -124,28 +124,23 @@
         "regra": "Utilizar exatamente o mesmo conteúdo nas dez chamadas, sem adaptações específicas por modelo."
     },
     "estimativa_custos": {
-        "status": "estimativa_preliminar_nao_medida",
-        "base": "Preços documentados e estimativa de tokens de entrada e saída para cinco tarefas por modelo.",
-        "estimativa_por_modelo_usd": {
-            "GPT-6.1 Terra": {
-                "minimo": 0.028,
-                "maximo": 0.041
-            },
-            "Claude Sonnet 5.5": {
-                "minimo": 0.056,
-                "maximo": 0.082
-            }
+        "status": "auditoria_orcamentaria_preliminar",
+        "metodo": "Estimativa heurística de tokens a partir dos bytes dos materiais, com reservas. Não representa contagem real de tokenizer.",
+        "tokens_entrada_estimados_por_modelo": {
+            "GPT-6.1 Terra": 11459,
+            "Claude Sonnet 5.5": 14895
         },
-        "total_combinado_sem_margem_usd": {
-            "minimo": 0.084,
-            "maximo": 0.123
+        "tokens_saida_maximos_por_modelo": 9900,
+        "custo_estimado_usd": {
+            "GPT-6.1 Terra": 0.060959,
+            "Claude Sonnet 5.5": 0.12879,
+            "total_sem_margem": 0.189749,
+            "total_com_margem_2x": 0.379498
         },
         "margem_de_seguranca_multiplicador": 2,
-        "total_combinado_com_margem_usd": {
-            "minimo": 0.168,
-            "maximo": 0.246
-        },
-        "observacao": "Valores aproximados. Tokenização real, respostas, preços vigentes e condições das contas ainda precisam ser confirmados antes da execução."
+        "orcamento_operacional_planejado_usd": 0.5,
+        "limite_absoluto_mensal_usd": 10,
+        "observacao": "Estimativa sujeita a variação de tokenização, formatação, preços, encargos e condições da conta."
     },
     "autorizacao_execucao": {
         "chamadas_api_autorizadas": false,
@@ -156,6 +151,79 @@
             "Revisar privacidade e retenção de dados das contas utilizadas.",
             "Confirmar estimativa de custo antes da execução.",
             "Não ultrapassar o teto mensal de US$ 10."
+        ]
+    },
+    "auditoria_orcamentaria": {
+        "data_consulta": "2026-11-20",
+        "precos_usd_por_milhao_tokens": {
+            "GPT-6.1 Terra": {
+                "entrada": 1.0,
+                "saida": 5.0
+            },
+            "Claude Sonnet 5.5": {
+                "entrada": 2.0,
+                "saida": 10.0
+            }
+        },
+        "fontes_oficiais": [
+            "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+            "https://developers.openai.com/api/docs/pricing",
+            "https://platform.claude.com/docs/pt-BR/models/sonnet-5-5/overview",
+            "https://platform.claude.com/docs/en/about-claude/pricing"
+        ],
+        "estimativas_por_tarefa": {
+            "T01": {
+                "entrada_gpt": 1806,
+                "entrada_claude": 2347,
+                "saida_maxima": 1800
+            },
+            "T02": {
+                "entrada_gpt": 2508,
+                "entrada_claude": 3261,
+                "saida_maxima": 1500
+            },
+            "T03": {
+                "entrada_gpt": 2100,
+                "entrada_claude": 2729,
+                "saida_maxima": 1800
+            },
+            "T04": {
+                "entrada_gpt": 2670,
+                "entrada_claude": 3471,
+                "saida_maxima": 1800
+            },
+            "T05": {
+                "entrada_gpt": 2375,
+                "entrada_claude": 3087,
+                "saida_maxima": 3000
+            }
+        },
+        "limites_saida_por_tarefa": {
+            "T01": 1800,
+            "T02": 1500,
+            "T03": 1800,
+            "T04": 1800,
+            "T05": 3000
+        },
+        "metodologia_entrada": {
+            "GPT-6.1 Terra": "Bytes dos materiais e prompt-base divididos por 3, com reserva aproximada de 20%.",
+            "Claude Sonnet 5.5": "Estimativa do GPT acrescida de 30%, além da reserva aproximada já aplicada.",
+            "limitacao": "Fatores heurísticos; não substituem contagem com os tokenizadores oficiais."
+        },
+        "custos_calculados_usd": {
+            "GPT-6.1 Terra": 0.060959,
+            "Claude Sonnet 5.5": 0.12879,
+            "total": 0.189749,
+            "total_com_margem_2x": 0.379498
+        },
+        "orcamento_operacional_planejado_usd": 0.5,
+        "teto_mensal_absoluto_usd": 10,
+        "condicoes": [
+            "Aplicar os limites de saída em cada chamada.",
+            "Usar preços Standard documentados, sem ferramentas externas.",
+            "Reconfirmar preços e disponibilidade antes de qualquer execução.",
+            "Contabilizar custos efetivos retornados pelos provedores.",
+            "Interromper se o orçamento planejado ou o teto autorizado puder ser excedido."
         ]
     }
 }
