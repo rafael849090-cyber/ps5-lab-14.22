@@ -1,0 +1,38 @@
+{
+  "id": "T04",
+  "classificacoes_referencia": [
+    {
+      "afirmacao": "A01",
+      "classificacao": "fato_comprovado",
+      "justificativa": "A fonte F01 lista a versao indicada."
+    },
+    {
+      "afirmacao": "A02",
+      "classificacao": "fato_comprovado",
+      "justificativa": "A fonte F01 informa a realizacao de correcoes de seguranca."
+    },
+    {
+      "afirmacao": "A03",
+      "classificacao": "fato_comprovado",
+      "justificativa": "A fonte F02 documenta procedimentos oficiais de atualizacao e reinstalacao."
+    },
+    {
+      "afirmacao": "A04",
+      "classificacao": "nao_comprovada",
+      "justificativa": "As fontes fornecidas nao identificam uma vulnerabilidade especifica no hypervisor."
+    },
+    {
+      "afirmacao": "A05",
+      "classificacao": "inferencia_nao_sustentada",
+      "justificativa": "Uma referencia generica a correcoes de seguranca nao demonstra a eliminacao de todas as vulnerabilidades conhecidas."
+    }
+  ],
+  "limites": [
+    "As fontes nao identificam vulnerabilidades especificas corrigidas.",
+    "As fontes nao descrevem mecanismos internos das correcoes.",
+    "Nao ha evidencia fornecida sobre alteracoes especificas no hypervisor.",
+    "Nao e possivel concluir que todas as vulnerabilidades conhecidas foram eliminadas.",
+    "A ausencia de uma informacao nas fontes nao prova que o evento nao ocorreu."
+  ],
+  "regra": "As classificacoes sao referencias para este exercicio e nao devem ser ampliadas para conclusoes tecnicas sobre o firmware."
+}

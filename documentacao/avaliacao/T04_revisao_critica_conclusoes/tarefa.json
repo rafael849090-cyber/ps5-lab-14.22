@@ -1,0 +1,18 @@
+{
+  "id": "T04",
+  "nome": "Revisao critica de conclusoes",
+  "objetivo": "Avaliar a capacidade dos modelos de revisar criticamente conclusoes tecnicas, identificar falhas de raciocinio e reconhecer afirmacoes sem sustentacao.",
+  "tema": "Revisao de conclusoes sobre documentacao e pesquisa tecnica do PS5 firmware 14.22.",
+  "pergunta": "Examine exclusivamente as afirmacoes e evidencias fornecidas. Identifique conclusoes sustentadas, conclusoes parcialmente sustentadas, contradicoes, inferencias indevidas e pontos que permanecem sem comprovacao. Explique quais correcoes sao necessarias e justifique cada avaliacao.",
+  "regras": [
+    "Utilizar exclusivamente o material fornecido.",
+    "Nao inventar fontes, evidencias ou informacoes tecnicas.",
+    "Distinguir fatos comprovados, hipoteses e afirmacoes nao comprovadas.",
+    "Nao tratar ausencia de evidencia como prova de inexistencia.",
+    "Identificar contradicoes e saltos logicos.",
+    "Indicar claramente quando as informacoes forem insuficientes.",
+    "Nao atribuir conclusoes ao firmware sem evidencia especifica.",
+    "Nao propor exploracao, bypass ou contorno de protecoes."
+  ],
+  "status": "preparacao"
+}

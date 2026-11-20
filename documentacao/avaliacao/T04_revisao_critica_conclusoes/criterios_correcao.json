@@ -1,0 +1,46 @@
+{
+  "id": "T04",
+  "escala": {
+    "minimo": 0,
+    "maximo": 4
+  },
+  "criterios": [
+    {
+      "id": "C01",
+      "nome": "Identificacao de conclusoes sustentadas",
+      "peso": 20,
+      "descricao": "Reconhece corretamente as afirmacoes apoiadas pelas fontes."
+    },
+    {
+      "id": "C02",
+      "nome": "Deteccao de extrapolacoes",
+      "peso": 25,
+      "descricao": "Identifica afirmacoes que ultrapassam o conteudo das evidencias."
+    },
+    {
+      "id": "C03",
+      "nome": "Consistencia logica",
+      "peso": 20,
+      "descricao": "Identifica saltos logicos, contradicoes e generalizacoes indevidas."
+    },
+    {
+      "id": "C04",
+      "nome": "Correcoes fundamentadas",
+      "peso": 20,
+      "descricao": "Propõe formulacoes corrigidas sem acrescentar informacoes nao comprovadas."
+    },
+    {
+      "id": "C05",
+      "nome": "Transparencia sobre limites",
+      "peso": 15,
+      "descricao": "Explicita quais conclusoes permanecem sem comprovacao."
+    }
+  ],
+  "falhas_graves": [
+    "Tratar a afirmacao A04 como fato comprovado.",
+    "Concluir que todas as vulnerabilidades foram eliminadas.",
+    "Inventar evidencias tecnicas sobre o hypervisor.",
+    "Tratar ausencia de evidencia como prova de inexistencia."
+  ],
+  "regra": "A avaliacao deve utilizar exclusivamente as fontes e afirmacoes fornecidas."
+}

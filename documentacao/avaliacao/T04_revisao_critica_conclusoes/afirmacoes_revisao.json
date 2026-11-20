@@ -1,0 +1,43 @@
+{
+  "id": "T04",
+  "contexto": "Exercicio controlado de revisao critica. As afirmacoes abaixo devem ser avaliadas exclusivamente com base nas fontes F01 e F02 ja registradas no pacote T01.",
+  "fontes_disponiveis": [
+    {
+      "id": "F01",
+      "descricao": "Pagina oficial da Sony sobre recursos e atualizacoes do software do sistema PS5."
+    },
+    {
+      "id": "F02",
+      "descricao": "Pagina oficial da Sony com procedimentos de atualizacao e reinstalacao do software do sistema PS5."
+    }
+  ],
+  "afirmacoes": [
+    {
+      "id": "A01",
+      "texto": "A Sony lista a versao 26.07-14.22.00 para o PS5.",
+      "origem": "F01"
+    },
+    {
+      "id": "A02",
+      "texto": "A nota oficial da versao informa que foram realizadas correcoes de seguranca.",
+      "origem": "F01"
+    },
+    {
+      "id": "A03",
+      "texto": "A Sony documenta procedimentos oficiais para atualizar e reinstalar o software do sistema PS5.",
+      "origem": "F02"
+    },
+    {
+      "id": "A04",
+      "texto": "A versao 26.07-14.22.00 corrigiu uma vulnerabilidade especifica no hypervisor.",
+      "origem": "Nenhuma evidencia especifica fornecida"
+    },
+    {
+      "id": "A05",
+      "texto": "Como a nota menciona correcoes de seguranca, e possivel afirmar que todas as vulnerabilidades conhecidas foram eliminadas.",
+      "origem": "Inferencia nao sustentada"
+    }
+  ],
+  "instrucao": "Para cada afirmacao, classifique o nivel de sustentacao, indique a evidencia disponivel, identifique extrapolacoes e proponha uma formulacao corrigida quando necessario.",
+  "restricao": "O exercicio nao comprova vulnerabilidades, mecanismos internos ou alteracoes especificas do firmware."
+}
