@@ -1,0 +1,27 @@
+{
+  "id": "T05",
+  "nome": "Elaboracao de relatorio tecnico",
+  "objetivo": "Avaliar a capacidade dos modelos de elaborar relatorios tecnicos claros, estruturados, verificaveis e proporcionais as evidencias disponiveis.",
+  "tema": "Relatorio de pesquisa documental sobre o PS5 firmware 14.22.",
+  "pergunta": "Elabore um relatorio tecnico utilizando exclusivamente os materiais fornecidos. Apresente objetivo, metodologia, fontes consultadas, fatos comprovados, hipoteses, pontos nao comprovados, limitacoes e conclusoes. Relacione cada afirmacao importante a sua evidencia e deixe explicitas as informacoes que nao puderam ser verificadas.",
+  "estrutura_obrigatoria": [
+    "Titulo e identificacao do relatorio.",
+    "Objetivo e escopo.",
+    "Metodologia e materiais utilizados.",
+    "Fatos sustentados pelas fontes.",
+    "Hipoteses e afirmacoes nao comprovadas.",
+    "Limitacoes da pesquisa.",
+    "Conclusoes proporcionais as evidencias.",
+    "Referencias das fontes utilizadas."
+  ],
+  "regras": [
+    "Utilizar exclusivamente os materiais fornecidos.",
+    "Nao inventar fontes, citacoes, resultados ou informacoes tecnicas.",
+    "Distinguir fatos, hipoteses e informacoes nao comprovadas.",
+    "Nao afirmar que foram realizadas verificacoes que nao ocorreram.",
+    "Nao atribuir vulnerabilidades ou alteracoes especificas ao firmware sem evidencia.",
+    "Indicar claramente lacunas e limitacoes.",
+    "Nao propor exploracao, bypass ou contorno de protecoes."
+  ],
+  "status": "preparacao"
+}

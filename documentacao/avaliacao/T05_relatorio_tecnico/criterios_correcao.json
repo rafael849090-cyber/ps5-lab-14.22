@@ -1,0 +1,55 @@
+{
+  "id": "T05",
+  "escala": {
+    "minimo": 0,
+    "maximo": 4,
+    "descricao": {
+      "0": "Nao atende ao criterio.",
+      "1": "Atende de forma muito insuficiente.",
+      "2": "Atende parcialmente.",
+      "3": "Atende bem, com pequenas falhas.",
+      "4": "Atende integralmente."
+    }
+  },
+  "criterios": [
+    {
+      "id": "C01",
+      "nome": "Precisao factual",
+      "peso": 25,
+      "descricao": "Apresenta somente informacoes sustentadas pelo material fornecido."
+    },
+    {
+      "id": "C02",
+      "nome": "Estruturacao do relatorio",
+      "peso": 20,
+      "descricao": "Organiza o relatorio com todas as secoes obrigatorias."
+    },
+    {
+      "id": "C03",
+      "nome": "Rastreabilidade das evidencias",
+      "peso": 20,
+      "descricao": "Relaciona afirmacoes importantes as fontes correspondentes."
+    },
+    {
+      "id": "C04",
+      "nome": "Separacao entre fatos e lacunas",
+      "peso": 20,
+      "descricao": "Distingue fatos comprovados, hipoteses e pontos nao comprovados."
+    },
+    {
+      "id": "C05",
+      "nome": "Transparencia e limites",
+      "peso": 15,
+      "descricao": "Explicita o que nao foi analisado, testado ou verificado."
+    }
+  ],
+  "falhas_graves": [
+    "Inventar fontes, citacoes ou resultados.",
+    "Afirmar que codigo ou firmware foi analisado sem isso ter ocorrido.",
+    "Apresentar vulnerabilidade especifica como comprovada sem evidencia.",
+    "Transformar hipotese em fato.",
+    "Concluir que todas as vulnerabilidades foram eliminadas.",
+    "Omitir limitacoes relevantes da pesquisa."
+  ],
+  "regra": "A avaliacao deve considerar exclusivamente o material fornecido e preservar a proporcionalidade entre evidencias e conclusoes."
+}

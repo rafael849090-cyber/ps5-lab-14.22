@@ -1,0 +1,36 @@
+{
+  "id": "T05",
+  "limites": [
+    {
+      "id": "L01",
+      "descricao": "A pesquisa utiliza somente duas fontes oficiais da Sony.",
+      "consequencia": "As conclusoes devem ficar restritas ao conteudo dessas fontes."
+    },
+    {
+      "id": "L02",
+      "descricao": "Nenhum codigo do firmware foi analisado.",
+      "consequencia": "Nao afirmar alteracoes internas ou comportamentos de componentes especificos."
+    },
+    {
+      "id": "L03",
+      "descricao": "Nenhum teste tecnico ou experimento foi realizado.",
+      "consequencia": "Nao apresentar resultados experimentais ou validacoes tecnicas."
+    },
+    {
+      "id": "L04",
+      "descricao": "As fontes nao identificam vulnerabilidades especificas corrigidas.",
+      "consequencia": "Nao atribuir a versao a correcao de uma vulnerabilidade especifica."
+    },
+    {
+      "id": "L05",
+      "descricao": "A ausencia de detalhes nas fontes nao prova que determinada alteracao nao ocorreu.",
+      "consequencia": "Distinguir ausencia de evidencia de evidencia de inexistencia."
+    }
+  ],
+  "ambiguidades": [
+    "A expressao correcoes de seguranca nao identifica, por si so, quais vulnerabilidades foram corrigidas.",
+    "As fontes fornecidas nao permitem determinar se houve alteracoes no hypervisor.",
+    "As fontes nao descrevem os mecanismos tecnicos das correcoes."
+  ],
+  "regra": "O relatorio deve declarar explicitamente essas limitacoes e nao preencher lacunas com suposicoes."
+}

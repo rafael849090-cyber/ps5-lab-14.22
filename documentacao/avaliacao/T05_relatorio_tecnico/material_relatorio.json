@@ -1,0 +1,43 @@
+{
+  "id": "T05",
+  "tema": "Pesquisa documental sobre o PS5 firmware 14.22.",
+  "objetivo_da_pesquisa": "Organizar fatos documentados e identificar limites das informacoes publicadas sobre a versao 26.07-14.22.00.",
+  "fontes": [
+    {
+      "id": "F01",
+      "instituicao": "Sony",
+      "titulo": "System software update features for PS5 consoles",
+      "url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
+      "informacao_sustentada": "A pagina lista a versao 26.07-14.22.00 e informa a realizacao de correcoes de seguranca.",
+      "limite": "A nota nao identifica vulnerabilidades especificas, componentes internos ou mecanismos das correcoes."
+    },
+    {
+      "id": "F02",
+      "instituicao": "Sony",
+      "titulo": "Como atualizar o software do sistema em um console PS5",
+      "url": "https://www.playstation.com/pt-br/support/hardware/ps5/system-software/",
+      "informacao_sustentada": "A pagina documenta procedimentos oficiais de atualizacao e reinstalacao do software do sistema.",
+      "limite": "A documentacao de procedimentos nao comprova detalhes internos do firmware."
+    }
+  ],
+  "fatos_comprovados": [
+    "A Sony lista a versao 26.07-14.22.00.",
+    "A nota da versao menciona correcoes de seguranca.",
+    "A Sony publica procedimentos oficiais de atualizacao e reinstalacao."
+  ],
+  "pontos_nao_comprovados": [
+    "Identidade de vulnerabilidades especificas corrigidas.",
+    "Correcao de vulnerabilidade especifica no hypervisor.",
+    "Alteracoes em componentes internos especificos.",
+    "Mecanismo tecnico utilizado nas correcoes.",
+    "Eliminacao de todas as vulnerabilidades conhecidas."
+  ],
+  "metodologia_e_limites": [
+    "Analise documental restrita as duas fontes oficiais fornecidas.",
+    "Nenhum codigo do firmware foi analisado.",
+    "Nenhum teste tecnico ou experimento foi realizado.",
+    "Nenhuma vulnerabilidade foi reproduzida ou verificada.",
+    "A ausencia de detalhes nas fontes nao prova que determinada alteracao nao ocorreu."
+  ],
+  "regra": "O relatorio deve refletir somente as informacoes deste material, sem acrescentar descobertas ou verificacoes inexistentes."
+}
