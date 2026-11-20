@@ -9,8 +9,10 @@
       "id": "gpt-6.1-terra",
       "provedor": "OpenAI",
       "compatibilidade_confirmada": false,
-      "observacao": "A documentação consultada demonstra o endpoint de contagem, mas não confirma sua compatibilidade específica com este ID.",
-      "status_publico": "Listado no catalogo oficial"
+      "observacao": "A documentação oficial lista gpt-6.1-terra entre os modelos aceitos pela Responses API e documenta o parâmetro model no endpoint de contagem. A compatibilidade é sustentada documentalmente, mas não foi verificada experimentalmente.",
+      "status_publico": "Listado no catalogo oficial",
+      "compatibilidade_documental": "sustentada",
+      "compatibilidade_experimental": false
     },
     {
       "nome": "Claude Sonnet 5.5",
@@ -43,8 +45,9 @@
         "Exige requisição externa à API.",
         "O conteúdo enviado será processado pelo provedor.",
         "A contagem local com tiktoken não reproduz necessariamente toda a estrutura da requisição.",
-        "A compatibilidade com gpt-6.1-terra ainda não foi confirmada."
-      ]
+        "A compatibilidade é sustentada pela documentação da Responses API, mas não foi verificada experimentalmente com gpt-6.1-terra."
+      ],
+      "observacao_compatibilidade": "O modelo consta na lista de modelos aceitos pela Responses API. O endpoint de contagem aceita o parâmetro model. Não foi encontrada declaração específica de teste ou homologação experimental desse modelo no endpoint."
     },
     "anthropic": {
       "nome": "Claude Token Count API",
@@ -105,12 +108,12 @@
     "motivo": "Preservar privacidade, evitar alterações prematuras no ambiente e confirmar compatibilidade dos modelos antes de qualquer execução."
   },
   "pendencias": [
-    "Confirmar compatibilidade do endpoint OpenAI com gpt-6.1-terra.",
     "Verificar condições de autenticação e limites de utilização.",
     "Avaliar privacidade e retenção dos dados enviados.",
     "Decidir se uma futura contagem externa será autorizada.",
     "Somente após validação, atualizar as estimativas de tokens e os custos.",
-    "Verificar as condições efetivas de acesso e os limites do endpoint Anthropic na conta que eventualmente será utilizada."
+    "Verificar as condições efetivas de acesso e os limites do endpoint Anthropic na conta que eventualmente será utilizada.",
+    "Verificar a disponibilidade efetiva de gpt-6.1-terra e do endpoint de contagem na conta OpenAI que eventualmente será utilizada."
   ],
   "fontes": [
     {
@@ -142,8 +145,11 @@
       "fontes": [
         "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
         "https://developers.openai.com/api/docs/pricing",
-        "https://developers.openai.com/api/docs/guides/token-counting"
-      ]
+        "https://developers.openai.com/api/docs/guides/token-counting",
+        "https://developers.openai.com/api/reference/cli/resources/responses/subresources/input_tokens/methods/count"
+      ],
+      "compatibilidade_documental": "sustentada",
+      "compatibilidade_experimental": false
     },
     "anthropic": {
       "status": "ativo",
