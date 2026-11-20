@@ -39,5 +39,31 @@
     "contratacao_sem_autorizacao": false,
     "estrategia": "um modelo principal e um revisor independente",
     "terceiro_modelo": "somente mediante justificativa"
+  },
+  "avaliacao_modelos": {
+    "status": "pendente",
+    "apis_contratadas": false,
+    "candidatos": [
+      {
+        "nome": "GPT-6.1 Terra",
+        "fornecedor": "OpenAI",
+        "funcao_prevista": "modelo principal",
+        "status": "candidato"
+      },
+      {
+        "nome": "Claude Sonnet 5.5",
+        "fornecedor": "Anthropic",
+        "funcao_prevista": "revisor independente",
+        "status": "candidato"
+      }
+    ],
+    "criterios": [
+      "capacidade de pesquisa técnica",
+      "qualidade de análise e revisão",
+      "custo de utilização",
+      "privacidade e retenção de dados",
+      "compatibilidade com a arquitetura híbrida"
+    ],
+    "contratacao_exige_autorizacao_humana": true
   }
 }
