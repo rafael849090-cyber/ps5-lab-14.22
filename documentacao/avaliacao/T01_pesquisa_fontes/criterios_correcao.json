@@ -1,0 +1,47 @@
+{
+  "id": "T01",
+  "escala": {
+    "minimo": 0,
+    "maximo": 4
+  },
+  "criterios": [
+    {
+      "id": "C01",
+      "nome": "Existencia da fonte",
+      "peso": 25,
+      "nota_4": "Fonte original localizada e acessível."
+    },
+    {
+      "id": "C02",
+      "nome": "Autoria e origem",
+      "peso": 20,
+      "nota_4": "Instituicao ou autor corretamente identificado."
+    },
+    {
+      "id": "C03",
+      "nome": "Identificacao de fonte primaria",
+      "peso": 20,
+      "nota_4": "Fonte primaria corretamente classificada."
+    },
+    {
+      "id": "C04",
+      "nome": "Correspondencia das afirmacoes",
+      "peso": 25,
+      "nota_4": "Conclusoes correspondem exatamente ao conteudo da fonte."
+    },
+    {
+      "id": "C05",
+      "nome": "Transparencia sobre limitacoes",
+      "peso": 10,
+      "nota_4": "Incertezas e informacoes nao comprovadas claramente identificadas."
+    }
+  ],
+  "falhas_graves": [
+    "URL inventada",
+    "Autor ou titulo inexistente",
+    "Citacao que nao aparece na fonte",
+    "Conclusao sem sustentacao documental",
+    "Hipotese apresentada como fato"
+  ],
+  "regra": "Toda referencia deve ser conferida na pagina original antes de receber pontuacao."
+}

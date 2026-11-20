@@ -1,0 +1,23 @@
+{
+  "id": "T01",
+  "tema": "PS5 firmware 26.07-14.22.00",
+  "itens_nao_comprovados": [
+    {
+      "afirmacao": "A nota da Sony identifica vulnerabilidades específicas corrigidas.",
+      "motivo": "A nota oficial consultada informa apenas que houve correções de segurança."
+    },
+    {
+      "afirmacao": "Uma vulnerabilidade específica foi corrigida nessa versão.",
+      "motivo": "Não foi apresentada documentação primária que identifique essa vulnerabilidade e relacione a correção à versão."
+    },
+    {
+      "afirmacao": "O firmware modificou um componente interno específico.",
+      "motivo": "A nota de atualização não descreve componentes ou mecanismos técnicos."
+    },
+    {
+      "afirmacao": "A atualização comprova ou impede determinado método de exploração.",
+      "motivo": "Não há evidência técnica suficiente para essa conclusão."
+    }
+  ],
+  "regra": "Manter as afirmações como não comprovadas até que fontes primárias verificáveis sustentem explicitamente cada uma."
+}

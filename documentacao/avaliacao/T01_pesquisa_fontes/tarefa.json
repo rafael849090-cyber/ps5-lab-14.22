@@ -1,0 +1,14 @@
+{
+  "id": "T01",
+  "nome": "Pesquisa de fonte técnica primária",
+  "objetivo": "Avaliar a capacidade de localizar e verificar fontes técnicas originais.",
+  "pergunta": "Investigue uma afirmação técnica relacionada ao PS5 firmware 14.22. Localize fontes primárias, identifique autoria e origem, explique o que elas comprovam e separe fatos confirmados de hipóteses. Não invente referências. Se não encontrar evidências suficientes, declare a limitação.",
+  "regras": {
+    "mesma_pergunta_para_os_modelos": true,
+    "nao_inventar_fontes": true,
+    "exigir_urls_originais": true,
+    "separar_fatos_de_hipoteses": true,
+    "declarar_incertezas": true
+  },
+  "status": "preparacao"
+}

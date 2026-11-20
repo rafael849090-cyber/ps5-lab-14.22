@@ -1,0 +1,38 @@
+{
+  "id": "T01",
+  "tema": "PS5 firmware 26.07-14.22.00",
+  "fontes": [
+    {
+      "id": "F01",
+      "titulo": "System software update features for PS5 consoles",
+      "instituicao": "Sony Interactive Entertainment",
+      "tipo": "primaria",
+      "url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
+      "trecho_relevante": "Version: 26.07-14.22.00. We've made some security fixes to the system software.",
+      "o_que_comprova": [
+        "A Sony identifica publicamente a versão 26.07-14.22.00.",
+        "A nota oficial informa que foram realizadas correções de segurança."
+      ],
+      "o_que_nao_comprova": [
+        "Quais vulnerabilidades foram corrigidas.",
+        "Quais componentes internos foram modificados.",
+        "A natureza técnica ou o mecanismo das correções."
+      ]
+    },
+    {
+      "id": "F02",
+      "titulo": "Como atualizar o software do sistema em um console PS5",
+      "instituicao": "Sony Interactive Entertainment",
+      "tipo": "primaria",
+      "url": "https://www.playstation.com/pt-br/support/hardware/ps5/system-software/",
+      "trecho_relevante": "Documentação oficial sobre atualização e reinstalação do software do sistema.",
+      "o_que_comprova": [
+        "A Sony publica procedimentos oficiais de atualização do PS5."
+      ],
+      "o_que_nao_comprova": [
+        "Detalhes internos específicos da versão 26.07-14.22.00."
+      ]
+    }
+  ],
+  "regra": "Fontes secundárias podem servir como pistas, mas não substituem a documentação original."
+}
