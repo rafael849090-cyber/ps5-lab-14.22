@@ -1,0 +1,234 @@
+{
+  "id": "VERIFICACAO-MODELOS-01",
+  "data_consulta": "2026-11-20",
+  "status": "verificacao_parcial",
+  "modelos": [
+    {
+      "nome": "GPT-6.1 Terra",
+      "provedor": "OpenAI",
+      "identificador_api": "gpt-6.1-terra",
+      "status_identificacao": "confirmado_em_documentacao_oficial",
+      "preco_usd_por_milhao_tokens": {
+        "entrada": 1.0,
+        "saida": 5.0
+      },
+      "status_preco": "confirmado_em_documentacao_oficial",
+      "fonte_modelo_consultada": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+      "fonte_preco_consultada": "https://developers.openai.com/api/docs/pricing",
+      "privacidade_retencao": {
+        "status": "politica_documentada_condicoes_de_conta_pendentes",
+        "fatos_documentados": [
+          "Dados enviados pela API não são utilizados para treinamento dos modelos por padrão, salvo autorização explícita.",
+          "Registros de monitoramento de abuso podem conter conteúdo enviado e recebido, além de metadados.",
+          "A retenção padrão dos registros de monitoramento de abuso pode ser de até 30 dias.",
+          "Alguns recursos e endpoints podem armazenar estado da aplicação por períodos ou condições específicas.",
+          "Zero Data Retention (ZDR) e Modified Abuse Monitoring estão sujeitos a aprovação e requisitos de elegibilidade."
+        ],
+        "excecoes_e_limites_documentados": [
+          "Nem todos os endpoints e recursos são elegíveis para ZDR.",
+          "Mesmo com ZDR, determinados recursos podem manter estado da aplicação.",
+          "Podem existir exceções relacionadas a arquivos, imagens, segurança e obrigações legais."
+        ],
+        "condicoes_nao_verificadas": [
+          "Se uma eventual conta do laboratório será aprovada para ZDR ou Modified Abuse Monitoring.",
+          "Se os endpoints e recursos pretendidos serão elegíveis para esses controles.",
+          "Quais configurações de retenção estarão efetivamente aplicadas à conta.",
+          "Se haverá condições contratuais adicionais aplicáveis ao uso pretendido."
+        ],
+        "fontes_oficiais": [
+          "https://developers.openai.com/api/docs/guides/your-data",
+          "https://openai.com/enterprise-privacy/",
+          "https://openai.com/index/offering-zero-data-retention-for-frontier-models/"
+        ]
+      },
+      "condicoes_preco": {
+        "data_consulta": "2026-11-20",
+        "moeda": "USD",
+        "unidade": "por milhao de tokens",
+        "modalidade_referencia": "Standard",
+        "precos_por_modalidade": {
+          "Standard": {
+            "entrada": 1.0,
+            "saida": 5.0
+          },
+          "Batch_Flex": {
+            "entrada": 0.5,
+            "saida": 2.5
+          },
+          "Fast": {
+            "entrada": 2.0,
+            "saida": 10.0
+          }
+        },
+        "cache": {
+          "entrada_em_cache": 0.05,
+          "escrita_30_minutos": 1.25,
+          "escrita_12_horas": 2.5
+        },
+        "condicoes_adicionais": [
+          "Batch e Flex custam 50% menos que Standard.",
+          "Fast custa duas vezes o preco Standard.",
+          "Processamento regional pode acrescentar 10% quando aplicavel.",
+          "Prompts acima de 272 mil tokens de entrada possuem multiplicadores especiais."
+        ],
+        "observacao": "Os valores de referencia para a estimativa T01-T05 serao os da modalidade Standard.",
+        "fontes_oficiais": [
+          "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+          "https://developers.openai.com/api/docs/pricing"
+        ]
+      }
+    },
+    {
+      "nome": "Claude Sonnet 5.5",
+      "provedor": "Anthropic",
+      "identificador_api": "claude-sonnet-5-5",
+      "status_identificacao": "confirmado_em_documentacao_oficial",
+      "preco_usd_por_milhao_tokens": {
+        "entrada": 2.0,
+        "saida": 10.0
+      },
+      "status_preco": "confirmado_em_documentacao_oficial",
+      "fonte_modelo_consultada": "https://platform.claude.com/docs/pt-BR/models/sonnet-5-5/overview",
+      "fonte_status_api_consultada": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "privacidade_retencao": {
+        "status": "politica_documentada_condicoes_de_conta_pendentes",
+        "fatos_documentados": [
+          "Dados enviados pela API não são utilizados para treinamento por padrão, salvo permissão expressa.",
+          "Entradas e saídas da API são eliminadas automaticamente em até 30 dias, conforme a política geral documentada.",
+          "A Anthropic disponibiliza Zero Data Retention (ZDR) mediante solicitação para organizações elegíveis."
+        ],
+        "excecoes_e_limites_documentados": [
+          "A retenção pode ser diferente para recursos específicos, como a Files API.",
+          "ZDR aplica-se somente aos endpoints e recursos elegíveis.",
+          "Recursos com estado persistente e integrações de terceiros podem não estar cobertos por ZDR.",
+          "Podem existir exceções relacionadas a obrigações legais e aplicação de políticas."
+        ],
+        "condicoes_nao_verificadas": [
+          "Se uma eventual organização do laboratório poderá solicitar e obter ZDR.",
+          "Se os endpoints e recursos pretendidos serão elegíveis para ZDR.",
+          "Quais configurações de retenção estarão efetivamente aplicadas à conta.",
+          "Se haverá condições contratuais adicionais aplicáveis ao uso pretendido."
+        ],
+        "fontes_oficiais": [
+          "https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data",
+          "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention",
+          "https://privacy.claude.com/en/articles/15425996-data-retention-practices-for-covered-models"
+        ]
+      },
+      "fonte_preco_consultada": "https://platform.claude.com/docs/pt-BR/about-claude/pricing"
+    }
+  ],
+  "pendencias": [
+    "Verificar os limites efetivos, a disponibilidade dos modelos e as condições de acesso nas futuras contas de API.",
+    "Verificar a elegibilidade dos endpoints pretendidos para controles de retenção reduzida.",
+    "Confirmar as condições de privacidade e retenção aplicáveis às contas que eventualmente forem utilizadas.",
+    "Estimar o custo total das tarefas T01 a T05 antes de qualquer chamada paga."
+  ],
+  "restricoes": [
+    "Nenhuma API contratada.",
+    "Nenhuma chave criada.",
+    "Nenhuma chamada paga realizada.",
+    "Nenhuma aprovação de ZDR presumida.",
+    "Nenhuma configuração específica de conta considerada verificada.",
+    "Nenhum material privado ou segredo do laboratório deve ser enviado a serviços externos sem avaliação e autorização prévias."
+  ],
+  "limites_disponibilidade_acesso": {
+    "data_consulta": "2026-11-20",
+    "status": "documentacao_consultada_condicoes_de_conta_pendentes",
+    "openai": {
+      "metricas": [
+        "Requisicoes por minuto (RPM)",
+        "Tokens por minuto (TPM)",
+        "Limites adicionais conforme modelo e endpoint"
+      ],
+      "limites_padrao_familia_terra": {
+        "Build": {
+          "rpm": 5000,
+          "tpm": 1000000
+        },
+        "Launch": {
+          "rpm": 10000,
+          "tpm": 4000000
+        },
+        "Grow": {
+          "rpm": 15000,
+          "tpm": 40000000
+        }
+      },
+      "requisitos_documentados": [
+        "Uso da API possui faturamento separado do ChatGPT.",
+        "A disponibilidade do modelo e independente do nivel de uso.",
+        "Os limites dependem da organizacao, projeto e modelo.",
+        "O Brasil consta na lista de regioes permitidas.",
+        "Novas contas com cobranca pre-paga possuem compra minima documentada de US$ 5."
+      ],
+      "condicoes_nao_verificadas": [
+        "Nivel efetivo da organizacao do laboratorio.",
+        "Limites efetivos da organizacao e do projeto.",
+        "Disponibilidade efetiva do GPT-6.1 Terra para as credenciais futuras.",
+        "Saldo, permissoes e configuracoes de gastos da conta."
+      ],
+      "fontes_oficiais": [
+        "https://developers.openai.com/api/docs/guides/rate-limits",
+        "https://developers.openai.com/api/docs/supported-countries",
+        "https://developers.openai.com/api/docs/guides/error-codes",
+        "https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform",
+        "https://help.openai.com/en/articles/8264644-setting-up-and-managing-prepaid-api-billing"
+      ]
+    },
+    "anthropic": {
+      "metricas": [
+        "Requisicoes por minuto (RPM)",
+        "Tokens de entrada por minuto (ITPM)",
+        "Tokens de saida por minuto (OTPM)"
+      ],
+      "limites_padrao_claude_sonnet_5_5": {
+        "Start": {
+          "rpm": 4000,
+          "itpm": 2000000,
+          "otpm": 400000
+        },
+        "Build": {
+          "rpm": 10000,
+          "itpm": 5000000,
+          "otpm": 1000000
+        },
+        "Scale": {
+          "rpm": 13000,
+          "itpm": 10000000,
+          "otpm": 2000000
+        }
+      },
+      "requisitos_documentados": [
+        "E necessaria uma conta Claude Console.",
+        "E necessaria uma chave de API ou autenticacao alternativa autorizada.",
+        "Organizacoes novas podem iniciar no nivel Evaluation com limites inferiores.",
+        "Os limites publicados representam maximos permitidos, nao garantias.",
+        "O Brasil consta na lista de regioes permitidas.",
+        "O uso normalmente utiliza creditos pre-pagos.",
+        "A organizacao pode configurar limites de gastos inferiores ao teto do nivel."
+      ],
+      "condicoes_nao_verificadas": [
+        "Nivel efetivo da futura organizacao.",
+        "Limites efetivos da conta e do workspace.",
+        "Disponibilidade efetiva do Claude Sonnet 5.5 para a organizacao.",
+        "Saldo de creditos e configuracao de cobranca.",
+        "Limite de gastos efetivamente configurado."
+      ],
+      "fontes_oficiais": [
+        "https://platform.claude.com/docs/en/api/rate-limits",
+        "https://platform.claude.com/docs/en/api/overview",
+        "https://platform.claude.com/docs/en/api/supported-regions",
+        "https://support.claude.com/pt/articles/8977456-como-faco-para-pagar-pelo-uso-da-claude-api"
+      ]
+    },
+    "restricoes": [
+      "Os limites publicados nao comprovam os limites efetivos de uma conta especifica.",
+      "Nenhuma conta de API foi criada ou configurada nesta etapa.",
+      "Nenhuma chave foi criada.",
+      "Nenhuma chamada paga foi realizada.",
+      "O teto de US$ 10 mensais do laboratorio permanece inalterado.",
+      "Nenhuma contratacao ou compra de creditos esta autorizada por este registro."
+    ]
+  }
+}

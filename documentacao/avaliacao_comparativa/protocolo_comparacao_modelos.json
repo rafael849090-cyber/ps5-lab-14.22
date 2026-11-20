@@ -1,0 +1,119 @@
+{
+  "id": "PROTOCOLO-01",
+  "nome": "Protocolo de comparacao controlada de modelos de IA",
+  "projeto": "laboratorio de pesquisa do PS5 firmware 14.22",
+  "status": "rascunho",
+  "objetivo": "Comparar modelos de IA utilizando as mesmas tarefas, materiais, instrucoes e criterios de avaliacao.",
+  "modelos_candidatos": [
+    {
+      "nome": "GPT-6.1 Terra",
+      "provedor": "OpenAI",
+      "status": "candidato"
+    },
+    {
+      "nome": "Claude Sonnet 5.5",
+      "provedor": "Anthropic",
+      "status": "candidato"
+    }
+  ],
+  "tarefas": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05"
+  ],
+  "regras_de_execucao": [
+    "Utilizar os mesmos materiais de referencia para todos os modelos.",
+    "Utilizar instrucoes equivalentes para cada tarefa.",
+    "Nao fornecer informacoes adicionais a apenas um modelo.",
+    "Nao alterar os materiais durante uma rodada comparativa.",
+    "Preservar integralmente as respostas originais.",
+    "Nao executar testes tecnicos no console ou no firmware.",
+    "Nao permitir que um modelo veja a resposta do outro.",
+    "Executar cinco chamadas independentes por modelo, uma para cada tarefa T01 a T05.",
+    "Utilizar o mesmo prompt-base e os mesmos materiais correspondentes em cada comparacao.",
+    "Nao compartilhar respostas, comentarios ou resultados de um modelo com o outro.",
+    "Nao fornecer aos modelos os criterios de correcao nem os materiais reservados para avaliacao.",
+    "Nao utilizar pesquisa ou ferramentas externas durante a elaboracao das respostas."
+  ],
+  "registro_obrigatorio": [
+    "Identificador da tarefa",
+    "Provedor",
+    "Nome e identificador oficial do modelo",
+    "Data e horario da execucao",
+    "Versao ou identificador retornado pelo provedor",
+    "Tokens de entrada",
+    "Tokens de saida",
+    "Custo da execucao",
+    "Tempo de resposta",
+    "Resposta original integral",
+    "Observacoes sobre erros ou limitacoes"
+  ],
+  "avaliacao": {
+    "metodo": "Avaliacao humana",
+    "escala": "0 a 4",
+    "criterios": "Utilizar os criterios de correcao especificos de cada tarefa.",
+    "avaliacao_anonima": true,
+    "preservar_respostas_originais": true
+  },
+  "controle_financeiro": {
+    "limite_mensal_usd": 10,
+    "contratacao_antecipada": false,
+    "permitir_execucao_sem_estimativa_de_custo": false,
+    "interromper_antes_de_ultrapassar_limite": true
+  },
+  "restricoes": [
+    "Nenhuma API sera contratada nesta fase.",
+    "Nenhuma chave de API sera criada nesta fase.",
+    "Nenhuma biblioteca adicional sera instalada nesta fase.",
+    "Nenhuma chamada paga sera realizada sem autorizacao explicita.",
+    "Precos e identificadores dos modelos devem ser confirmados na documentacao oficial antes dos testes."
+  ],
+  "formato_execucao": {
+    "chamadas_independentes_por_modelo": 5,
+    "total_de_chamadas_previstas": 10,
+    "organizacao": "Uma tarefa por chamada independente.",
+    "prompt_base": "Utilizar o mesmo prompt-base para os dois modelos.",
+    "materiais": "Fornecer os mesmos materiais correspondentes a cada tarefa.",
+    "isolamento": "Nenhum modelo podera acessar respostas produzidas pelo outro.",
+    "ferramentas_externas": "Nao utilizar pesquisa ou ferramentas externas durante as respostas.",
+    "preservacao": "Armazenar integralmente cada resposta original."
+  },
+  "materiais_por_tarefa": {
+    "T01": [
+      "T01_pesquisa_fontes/tarefa.json",
+      "T01_pesquisa_fontes/fontes_referencia.json"
+    ],
+    "T02": [
+      "T02_fatos_hipoteses/tarefa.json",
+      "T02_fatos_hipoteses/afirmacoes_avaliacao.json",
+      "T01_pesquisa_fontes/fontes_referencia.json"
+    ],
+    "T03": [
+      "T03_analise_documentacao_codigo/tarefa.json",
+      "T03_analise_documentacao_codigo/material_analise.py",
+      "T03_analise_documentacao_codigo/contexto_material.json"
+    ],
+    "T04": [
+      "T04_revisao_critica_conclusoes/tarefa.json",
+      "T04_revisao_critica_conclusoes/afirmacoes_revisao.json",
+      "T01_pesquisa_fontes/fontes_referencia.json"
+    ],
+    "T05": [
+      "T05_relatorio_tecnico/tarefa.json",
+      "T05_relatorio_tecnico/material_relatorio.json"
+    ]
+  },
+  "materiais_restritos": [
+    "T01_pesquisa_fontes/criterios_correcao.json",
+    "T01_pesquisa_fontes/fatos_nao_comprovados.json",
+    "T02_fatos_hipoteses/criterios_correcao.json",
+    "T02_fatos_hipoteses/limites_e_ambiguidades.json",
+    "T03_analise_documentacao_codigo/criterios_correcao.json",
+    "T04_revisao_critica_conclusoes/criterios_correcao.json",
+    "T04_revisao_critica_conclusoes/limites_e_ambiguidades.json",
+    "T05_relatorio_tecnico/criterios_correcao.json",
+    "T05_relatorio_tecnico/limites_e_ambiguidades.json"
+  ]
+}
