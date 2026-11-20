@@ -122,7 +122,11 @@
     "Verificar os limites efetivos, a disponibilidade dos modelos e as condições de acesso nas futuras contas de API.",
     "Verificar a elegibilidade dos endpoints pretendidos para controles de retenção reduzida.",
     "Confirmar as condições de privacidade e retenção aplicáveis às contas que eventualmente forem utilizadas.",
-    "Estimar o custo total das tarefas T01 a T05 antes de qualquer chamada paga."
+    "Estimar o custo total das tarefas T01 a T05 antes de qualquer chamada paga.",
+    "Verificar a disponibilidade efetiva dos endpoints de contagem nas futuras contas.",
+    "Esclarecer custo e politica de retencao especifica do endpoint OpenAI de contagem.",
+    "Confirmar limites efetivos e condicoes de ZDR aplicaveis ao endpoint Anthropic de contagem.",
+    "Nao tratar contagem estimada de tokens como garantia de equivalencia aos tokens faturados."
   ],
   "restricoes": [
     "Nenhuma API contratada.",
@@ -229,6 +233,71 @@
       "Nenhuma chamada paga foi realizada.",
       "O teto de US$ 10 mensais do laboratorio permanece inalterado.",
       "Nenhuma contratacao ou compra de creditos esta autorizada por este registro."
+    ]
+  },
+  "contagem_tokens": {
+    "data_consulta": "2026-11-20",
+    "status": "verificacao_documental_parcial_sem_testes",
+    "openai": {
+      "provedor": "OpenAI",
+      "modelo": "gpt-6.1-terra",
+      "metodo": "POST /v1/responses/input_tokens",
+      "documentacao": "https://developers.openai.com/api/docs/guides/token-counting",
+      "compatibilidade_documental": "sustentada",
+      "compatibilidade_experimental": false,
+      "compatibilidade_confirmada": false,
+      "fundamento": "O modelo consta na documentacao da Responses API e o endpoint aceita o parametro model. A documentacao consultada nao declara teste ou homologacao experimental especifica do gpt-6.1-terra nesse endpoint.",
+      "custo_endpoint": "nao_especificado_na_documentacao_consultada",
+      "retencao_especifica_endpoint": "nao_esclarecida_na_documentacao_consultada",
+      "requisitos": [
+        "Autenticacao por credencial da API OpenAI.",
+        "Envio do payload de entrada para processamento externo.",
+        "Disponibilidade efetiva do modelo e endpoint depende da conta e organizacao."
+      ],
+      "observacoes": [
+        "A contagem considera a entrada estruturada que sera enviada ao modelo, incluindo elementos de formatacao e estrutura da requisicao.",
+        "A documentacao nao permite afirmar que o endpoint seja gratuito.",
+        "A contagem local por tokenizer de texto simples nao reproduz necessariamente toda a estrutura da requisicao."
+      ],
+      "pendencias": [
+        "Verificar disponibilidade efetiva do modelo e endpoint na futura conta.",
+        "Verificar custo eventualmente aplicavel ao endpoint.",
+        "Esclarecer politica de retencao especifica do endpoint de contagem."
+      ]
+    },
+    "anthropic": {
+      "provedor": "Anthropic",
+      "modelo": "claude-sonnet-5-5",
+      "metodo": "POST /v1/messages/count_tokens",
+      "documentacao_guia": "https://platform.claude.com/docs/en/build-with-claude/token-counting",
+      "documentacao_api": "https://platform.claude.com/docs/en/api/messages/count_tokens",
+      "compatibilidade_documental": "suportada_para_modelos_ativos",
+      "compatibilidade_experimental": false,
+      "compatibilidade_confirmada": false,
+      "fundamento": "A documentacao informa que modelos ativos suportam contagem de tokens. O Claude Sonnet 5.5 consta como modelo ativo, mas nao houve teste na conta do laboratorio.",
+      "custo_endpoint": "gratuito_conforme_documentacao_sujeito_a_limites_de_requisicoes",
+      "retencao": "Endpoint documentado como elegivel a Zero Data Retention quando habilitado e aplicavel a organizacao e aos recursos utilizados.",
+      "requisitos": [
+        "Autenticacao por credencial da API Anthropic.",
+        "Envio do payload de mensagens para processamento externo.",
+        "Respeito aos limites de requisicoes aplicaveis a organizacao."
+      ],
+      "observacoes": [
+        "A contagem representa estimativa dos tokens de entrada.",
+        "A contagem nao inclui prompt caching e nao deve ser tratada como equivalente universal aos tokens faturados em todos os cenarios.",
+        "A gratuidade documentada nao elimina limites de requisicoes."
+      ],
+      "pendencias": [
+        "Verificar disponibilidade efetiva do modelo e endpoint na futura organizacao.",
+        "Verificar limites efetivos de requisicoes.",
+        "Verificar habilitacao e abrangencia de ZDR na futura organizacao."
+      ]
+    },
+    "restricoes": [
+      "Nenhum endpoint foi executado nesta verificacao.",
+      "Nenhuma chave ou credencial foi criada ou utilizada.",
+      "Nenhum payload foi transmitido aos provedores.",
+      "Nenhum custo foi incorrido."
     ]
   }
 }
