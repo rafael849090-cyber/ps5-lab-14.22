@@ -1,0 +1,80 @@
+{
+  "projeto": "laboratório de pesquisa do PS5 firmware 14.22",
+  "versao": "1.0",
+  "plataforma": "Android",
+  "ambiente": "Termux",
+  "arquitetura": "hibrida",
+  "integracoes": {
+    "modelos_ia": [],
+    "apis_contratadas": false,
+    "bibliotecas_adicionais_instaladas": false,
+    "conexao_definida": false
+  },
+  "agentes": [
+    {
+      "id": "AG-01",
+      "nome": "Coordenador",
+      "funcao": "Coordenar o trabalho dos agentes",
+      "responsabilidades": [
+        "Distribuir tarefas",
+        "Definir prioridades",
+        "Consolidar resultados",
+        "Identificar divergencias"
+      ],
+      "autoridade_final": false
+    },
+    {
+      "id": "AG-02",
+      "nome": "Pesquisador",
+      "funcao": "Pesquisar informacoes tecnicas",
+      "responsabilidades": [
+        "Localizar publicacoes e projetos",
+        "Identificar fontes primarias",
+        "Registrar evidencias",
+        "Separar fatos de hipoteses"
+      ]
+    },
+    {
+      "id": "AG-03",
+      "nome": "Analista",
+      "funcao": "Analisar codigo e documentacao",
+      "responsabilidades": [
+        "Examinar codigo-fonte",
+        "Analisar documentacao tecnica",
+        "Identificar dependencias",
+        "Documentar observacoes tecnicas"
+      ]
+    },
+    {
+      "id": "AG-04",
+      "nome": "Revisor",
+      "funcao": "Realizar revisao independente",
+      "responsabilidades": [
+        "Verificar conclusoes",
+        "Questionar premissas",
+        "Identificar inconsistencias",
+        "Solicitar evidencias adicionais"
+      ]
+    },
+    {
+      "id": "AG-05",
+      "nome": "Auditor",
+      "funcao": "Verificar integridade e rastreabilidade",
+      "responsabilidades": [
+        "Conferir origem das fontes",
+        "Verificar registros e historico",
+        "Documentar limitacoes",
+        "Conferir preservacao dos arquivos originais"
+      ]
+    }
+  ],
+  "regras": {
+    "preservar_arquivos_originais": true,
+    "exigir_fontes_verificaveis": true,
+    "separar_fatos_de_hipoteses": true,
+    "revisao_independente": true,
+    "revisao_humana_obrigatoria": true,
+    "execucao_automatica_de_codigo_nao_confiavel": false,
+    "alteracoes_sem_autorizacao": false
+  }
+}
