@@ -1,0 +1,93 @@
+{
+  "projeto": "laboratório de pesquisa do PS5 firmware 14.22",
+  "versao": "1.0",
+  "status": "definida_aguardando_autorizacao_de_testes",
+  "objetivo": "Comparar modelos de IA usando tarefas técnicas idênticas e critérios reproduzíveis.",
+  "candidatos": [
+    "GPT-6.1 Terra",
+    "Claude Sonnet 5.5"
+  ],
+  "tarefas": [
+    {
+      "id": "T01",
+      "nome": "Pesquisa de fonte técnica primária",
+      "objetivo": "Localizar fontes originais e verificar sua autenticidade.",
+      "resultado_esperado": "Referências identificáveis e justificativa de relevância."
+    },
+    {
+      "id": "T02",
+      "nome": "Separação de fatos e hipóteses",
+      "objetivo": "Distinguir informações comprovadas de interpretações.",
+      "resultado_esperado": "Afirmações classificadas e evidências correspondentes."
+    },
+    {
+      "id": "T03",
+      "nome": "Análise de documentação ou código",
+      "objetivo": "Interpretar material técnico fornecido sem extrapolar o que ele demonstra.",
+      "resultado_esperado": "Análise fundamentada, limitações e conclusões."
+    },
+    {
+      "id": "T04",
+      "nome": "Revisão crítica de conclusões",
+      "objetivo": "Identificar erros, contradições e afirmações sem sustentação.",
+      "resultado_esperado": "Problemas identificados e justificativas verificáveis."
+    },
+    {
+      "id": "T05",
+      "nome": "Produção de relatório técnico",
+      "objetivo": "Produzir relatório rastreável e fundamentado.",
+      "resultado_esperado": "Conclusões, fontes, limitações e distinção entre fatos e hipóteses."
+    }
+  ],
+  "criterios": [
+    {
+      "nome": "Precisão técnica",
+      "peso_percentual": 30
+    },
+    {
+      "nome": "Qualidade das evidências",
+      "peso_percentual": 30
+    },
+    {
+      "nome": "Transparência sobre limitações",
+      "peso_percentual": 20
+    },
+    {
+      "nome": "Capacidade de identificar erros",
+      "peso_percentual": 20
+    }
+  ],
+  "escala": {
+    "minimo": 0,
+    "maximo": 4,
+    "notas": {
+      "0": "Incorreto ou não realizado",
+      "1": "Muito insuficiente",
+      "2": "Parcialmente correto",
+      "3": "Correto com pequenas limitações",
+      "4": "Completo e bem fundamentado"
+    }
+  },
+  "protocolo": {
+    "tarefas_identicas": true,
+    "documentos_identicos": true,
+    "instrucoes_identicas": true,
+    "respostas_independentes": true,
+    "preservar_respostas_originais": true,
+    "avaliacao_humana": true,
+    "registrar_versao_e_data": true,
+    "registrar_tokens_e_custos": true
+  },
+  "politica": {
+    "apis_contratadas": false,
+    "testes_autorizados": false,
+    "chaves_criadas": false,
+    "instalacoes_adicionais_autorizadas": false,
+    "contratacao_exige_autorizacao_humana": true
+  },
+  "decisao_final": {
+    "modelos_aprovados": [],
+    "resultado": "pendente",
+    "responsavel": "validacao humana"
+  }
+}
