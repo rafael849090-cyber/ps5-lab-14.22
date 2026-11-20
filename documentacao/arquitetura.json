@@ -31,5 +31,13 @@
     "apis_contratadas": false,
     "bibliotecas_instaladas": false,
     "coordenador_implementado": false
+  },
+  "politica_financeira": {
+    "moeda": "USD",
+    "limite_mensal": 10,
+    "gasto_obrigatorio": false,
+    "contratacao_sem_autorizacao": false,
+    "estrategia": "um modelo principal e um revisor independente",
+    "terceiro_modelo": "somente mediante justificativa"
   }
 }
