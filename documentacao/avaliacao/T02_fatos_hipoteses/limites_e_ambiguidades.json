@@ -1,0 +1,30 @@
+{
+  "id": "T02",
+  "casos": [
+    {
+      "id": "L01",
+      "situacao": "A Sony informa que houve correcoes de seguranca.",
+      "limite": "Essa informacao nao identifica vulnerabilidades especificas nem descreve os detalhes das correcoes.",
+      "classificacao": "fato_com_limite_documental"
+    },
+    {
+      "id": "L02",
+      "situacao": "Uma vulnerabilidade especifica pode ter sido corrigida.",
+      "limite": "A possibilidade nao comprova que determinada vulnerabilidade foi corrigida nessa versao.",
+      "classificacao": "hipotese_nao_confirmada"
+    },
+    {
+      "id": "L03",
+      "situacao": "Um componente interno pode ter sido modificado.",
+      "limite": "As fontes fornecidas nao identificam componentes internos modificados.",
+      "classificacao": "nao_comprovada"
+    },
+    {
+      "id": "L04",
+      "situacao": "A documentacao oficial descreve procedimentos de atualizacao e reinstalacao.",
+      "limite": "Esses procedimentos nao revelam, por si so, os mecanismos internos das correcoes de seguranca.",
+      "classificacao": "fato_com_limite_documental"
+    }
+  ],
+  "regra": "Nao confundir ausencia de informacao nas fontes fornecidas com prova de que determinado evento nao ocorreu."
+}

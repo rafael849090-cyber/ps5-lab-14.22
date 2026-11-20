@@ -1,0 +1,48 @@
+{
+  "id": "T02",
+  "afirmacoes": [
+    {
+      "id": "A01",
+      "texto": "A Sony identifica publicamente a versao 26.07-14.22.00 como uma versao do software do sistema PS5.",
+      "classificacao_esperada": "fato_comprovado",
+      "fonte": "F01"
+    },
+    {
+      "id": "A02",
+      "texto": "A nota oficial da Sony informa que essa versao inclui correcoes de seguranca.",
+      "classificacao_esperada": "fato_comprovado",
+      "fonte": "F01"
+    },
+    {
+      "id": "A03",
+      "texto": "A Sony publicou procedimentos oficiais para atualizar e reinstalar o software do sistema PS5.",
+      "classificacao_esperada": "fato_comprovado",
+      "fonte": "F02"
+    },
+    {
+      "id": "A04",
+      "texto": "A nota oficial identifica quais vulnerabilidades especificas foram corrigidas.",
+      "classificacao_esperada": "nao_comprovada",
+      "fonte": "F01"
+    },
+    {
+      "id": "A05",
+      "texto": "Uma vulnerabilidade especifica foi corrigida nessa versao.",
+      "classificacao_esperada": "nao_comprovada",
+      "fonte": "F01"
+    },
+    {
+      "id": "A06",
+      "texto": "A atualizacao modificou um componente interno especifico do console.",
+      "classificacao_esperada": "nao_comprovada",
+      "fonte": "F01"
+    },
+    {
+      "id": "A07",
+      "texto": "As fontes fornecidas permitem identificar o mecanismo tecnico das correcoes de seguranca.",
+      "classificacao_esperada": "nao_comprovada",
+      "fonte": "F01"
+    }
+  ],
+  "regra": "A classificacao deve considerar exclusivamente o conteudo das fontes fornecidas. Nao completar lacunas com suposicoes."
+}

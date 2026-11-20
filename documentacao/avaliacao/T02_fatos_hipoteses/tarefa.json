@@ -1,0 +1,16 @@
+{
+  "id": "T02",
+  "nome": "Separacao entre fatos e hipoteses",
+  "objetivo": "Avaliar a capacidade do modelo de distinguir informacoes comprovadas, hipoteses e afirmacoes sem evidencias suficientes.",
+  "tema": "PS5 firmware 26.07-14.22.00",
+  "pergunta": "Com base exclusivamente nas fontes de referencia fornecidas, classifique cada afirmacao como fato comprovado, hipotese ou nao comprovada. Justifique cada classificacao, indique qual fonte sustenta a conclusao e explique os limites das evidencias.",
+  "regras": [
+    "Utilizar exclusivamente as fontes fornecidas.",
+    "Nao transformar hipotese em fato.",
+    "Nao inventar informacoes tecnicas.",
+    "Indicar a fonte que sustenta cada classificacao.",
+    "Declarar quando as fontes forem insuficientes.",
+    "Nao inferir detalhes internos que nao estejam documentados."
+  ],
+  "status": "preparacao"
+}

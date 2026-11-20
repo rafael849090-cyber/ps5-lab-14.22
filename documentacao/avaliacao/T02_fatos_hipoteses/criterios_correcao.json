@@ -1,0 +1,46 @@
+{
+  "id": "T02",
+  "escala": {
+    "minimo": 0,
+    "maximo": 4
+  },
+  "criterios": [
+    {
+      "id": "C01",
+      "nome": "Classificacao correta",
+      "peso": 30,
+      "nota_4": "Classifica corretamente fatos comprovados e afirmacoes nao comprovadas."
+    },
+    {
+      "id": "C02",
+      "nome": "Justificativa baseada em evidencias",
+      "peso": 25,
+      "nota_4": "Justifica cada classificacao com referencia precisa as fontes."
+    },
+    {
+      "id": "C03",
+      "nome": "Separacao entre fato e hipotese",
+      "peso": 20,
+      "nota_4": "Nao apresenta inferencias ou possibilidades como fatos."
+    },
+    {
+      "id": "C04",
+      "nome": "Reconhecimento de limites",
+      "peso": 15,
+      "nota_4": "Identifica claramente o que as fontes nao permitem concluir."
+    },
+    {
+      "id": "C05",
+      "nome": "Consistencia",
+      "peso": 10,
+      "nota_4": "Aplica os mesmos criterios de classificacao a todas as afirmacoes."
+    }
+  ],
+  "falhas_graves": [
+    "Apresentar hipotese como fato",
+    "Inventar evidencias ou referencias",
+    "Atribuir a fonte informacao que ela nao contem",
+    "Ignorar contradicoes ou limitacoes documentais"
+  ],
+  "regra": "A avaliacao deve considerar as fontes originais e a justificativa de cada classificacao, nao apenas o resultado final."
+}
