@@ -1,0 +1,170 @@
+{
+  "id": "METODOLOGIA-TOKENS-01",
+  "data_consulta": "2026-11-20",
+  "status": "pesquisa_documental_pendente_validacao",
+  "objetivo": "Documentar os métodos oficiais de contagem de tokens dos provedores OpenAI e Anthropic, suas limitações e condições de utilização.",
+  "modelos_avaliados": [
+    {
+      "nome": "GPT-6.1 Terra",
+      "id": "gpt-6.1-terra",
+      "provedor": "OpenAI",
+      "compatibilidade_confirmada": false,
+      "observacao": "A documentação consultada demonstra o endpoint de contagem, mas não confirma sua compatibilidade específica com este ID.",
+      "status_publico": "Listado no catalogo oficial"
+    },
+    {
+      "nome": "Claude Sonnet 5.5",
+      "id": "claude-sonnet-5-5",
+      "provedor": "Anthropic",
+      "compatibilidade_confirmada": true,
+      "observacao": "A documentação Anthropic declara que todos os modelos ativos suportam contagem de tokens; Sonnet 5.5 está documentado como ativo.",
+      "status_publico": "Ativo"
+    }
+  ],
+  "metodos": {
+    "openai": {
+      "nome": "Responses API Input Tokens",
+      "endpoint": "POST /v1/responses/input_tokens",
+      "documentacao": "https://developers.openai.com/api/docs/guides/token-counting",
+      "funcao": "Contar tokens da entrada estruturada antes da geração de uma resposta.",
+      "recursos_documentados": [
+        "Texto",
+        "Mensagens",
+        "Instrucoes",
+        "Imagens",
+        "Arquivos",
+        "Ferramentas"
+      ],
+      "dependencia_externa": true,
+      "requer_credencial_api": true,
+      "requer_envio_de_dados": true,
+      "gera_resposta_do_modelo": false,
+      "limitacoes": [
+        "Exige requisição externa à API.",
+        "O conteúdo enviado será processado pelo provedor.",
+        "A contagem local com tiktoken não reproduz necessariamente toda a estrutura da requisição.",
+        "A compatibilidade com gpt-6.1-terra ainda não foi confirmada."
+      ]
+    },
+    "anthropic": {
+      "nome": "Claude Token Count API",
+      "endpoint": "POST /v1/messages/count_tokens",
+      "documentacao": "https://platform.claude.com/docs/en/build-with-claude/token-counting",
+      "referencia_api": "https://platform.claude.com/docs/en/api/messages/count_tokens",
+      "funcao": "Contar tokens de entrada de uma mensagem sem gerar uma resposta.",
+      "recursos_documentados": [
+        "Mensagens",
+        "Ferramentas",
+        "Imagens",
+        "Documentos"
+      ],
+      "dependencia_externa": true,
+      "requer_credencial_api": true,
+      "requer_envio_de_dados": true,
+      "gera_resposta_do_modelo": false,
+      "limitacoes": [
+        "Exige requisição externa à API.",
+        "O conteúdo enviado será processado pelo provedor.",
+        "Está sujeito às condições e limites da API.",
+        "A contagem retornada é uma estimativa de tokens de entrada e não equivale necessariamente aos tokens faturados em todos os cenários, especialmente quando há prompt caching."
+      ],
+      "observacao_contagem": "O endpoint fornece uma estimativa de tokens de entrada. O resultado não representa necessariamente o total faturado em todos os cenários, especialmente quando há prompt caching."
+    },
+    "tokenizacao_local": {
+      "nome": "tiktoken",
+      "tipo": "Biblioteca local",
+      "funcao": "Tokenização local de texto.",
+      "dependencia_externa_durante_contagem": false,
+      "requer_instalacao": true,
+      "instalado_no_ambiente": false,
+      "limitacoes": [
+        "Não garante a contagem exata da entrada estruturada recebida pelo modelo.",
+        "Não reproduz necessariamente tokens de estrutura das mensagens.",
+        "Não substitui a contagem de imagens, arquivos e ferramentas.",
+        "A aplicabilidade ao modelo candidato deve ser verificada."
+      ]
+    }
+  },
+  "comparacao": {
+    "contagem_local": {
+      "envia_dados_a_provedor": false,
+      "precisao_exata_da_requisicao": false
+    },
+    "endpoints_oficiais": {
+      "envia_dados_a_provedor": true,
+      "precisao": "Contagem da entrada processada pelo endpoint, condicionada à compatibilidade do modelo e ao formato da requisição."
+    }
+  },
+  "decisao_atual": {
+    "instalar_dependencias": false,
+    "criar_chaves_api": false,
+    "executar_endpoints": false,
+    "enviar_materiais_a_provedores": false,
+    "realizar_chamadas_pagas": false,
+    "manter_estimativas_atuais_como_heuristicas": true,
+    "motivo": "Preservar privacidade, evitar alterações prematuras no ambiente e confirmar compatibilidade dos modelos antes de qualquer execução."
+  },
+  "pendencias": [
+    "Confirmar compatibilidade do endpoint OpenAI com gpt-6.1-terra.",
+    "Verificar condições de autenticação e limites de utilização.",
+    "Avaliar privacidade e retenção dos dados enviados.",
+    "Decidir se uma futura contagem externa será autorizada.",
+    "Somente após validação, atualizar as estimativas de tokens e os custos.",
+    "Verificar as condições efetivas de acesso e os limites do endpoint Anthropic na conta que eventualmente será utilizada."
+  ],
+  "fontes": [
+    {
+      "provedor": "OpenAI",
+      "url": "https://developers.openai.com/api/docs/guides/token-counting"
+    },
+    {
+      "provedor": "OpenAI",
+      "url": "https://developers.openai.com/api/reference/cli/resources/responses/subresources/input_tokens/methods/count"
+    },
+    {
+      "provedor": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/token-counting"
+    },
+    {
+      "provedor": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/api/messages/count_tokens"
+    }
+  ],
+  "verificacao_status_e_custos": {
+    "data_consulta": "2026-11-20",
+    "openai": {
+      "status": "modelo listado no catalogo oficial",
+      "preco_standard_entrada_usd_mtok": 1.0,
+      "preco_standard_saida_usd_mtok": 5.0,
+      "preco_contagem_tokens": "Nao especificado nas fontes consultadas",
+      "compatibilidade_endpoint_confirmada": false,
+      "observacao_preco": "A pagina individual informa US$ 1/5 no Standard. A tabela geral apresenta tambem valores inferiores em outras modalidades de processamento; nao misturar essas tarifas com Standard.",
+      "fontes": [
+        "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+        "https://developers.openai.com/api/docs/pricing",
+        "https://developers.openai.com/api/docs/guides/token-counting"
+      ]
+    },
+    "anthropic": {
+      "status": "ativo",
+      "preco_standard_entrada_usd_mtok": 2.0,
+      "preco_standard_saida_usd_mtok": 10.0,
+      "preco_contagem_tokens": "Gratuito, sujeito a limites de requisicoes",
+      "compatibilidade_endpoint_confirmada": true,
+      "fundamento": "A documentacao declara que todos os modelos ativos suportam contagem de tokens.",
+      "fontes": [
+        "https://platform.claude.com/docs/pt-BR/models/sonnet-5-5/overview",
+        "https://platform.claude.com/docs/en/build-with-claude/token-counting",
+        "https://platform.claude.com/docs/en/api/messages/count_tokens"
+      ]
+    },
+    "restricoes": {
+      "contagem_openai_executada": false,
+      "contagem_anthropic_executada": false,
+      "dados_enviados": false,
+      "chaves_criadas": false,
+      "dependencias_instaladas": false,
+      "chamadas_api_autorizadas": false
+    }
+  }
+}
