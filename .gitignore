@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Backups e temporários
+*.bak
+*.pre_*
+*.lock
+
+# Sistema
+.DS_Store
+*.swp
